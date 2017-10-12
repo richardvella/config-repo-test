@@ -7,11 +7,6 @@
       "Default": "Warning"
     }
   },
-  "configServer": {
-    "enabled": true,
-    "failFast" :  true, 
-    "uri": "http://localhost:9999"
-  },
   "management": {
     "endpoints": {
       "path": "/management",
