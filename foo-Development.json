@@ -1,0 +1,50 @@
+{
+  "Foo" : "ddasdasdasdasdsdasdsadasdasdasdasdasasdasdasd",
+  "Logging": {
+    "IncludeScopes": false,
+    "LogLevel": {
+      "Default": "Warning"
+    }
+  },
+  "configServer": {
+    "enabled": true,
+    "failFast" :  true, 
+    "uri": "http://localhost:9999"
+  },
+  "management": {
+    "endpoints": {
+      "path": "/management",
+      "enabled": false,
+      "config": {
+        "enabled": true,
+        "id": "configep1"
+      }
+    }
+  },
+  "Authentication": {
+    "Authority": "http://localhost:5001",
+    "ApiName": "api1",
+    "AllowedScopes": [ "api1" ],
+    "RequireHttpsMetadata": false,
+    "SupportedToken": "jwt"
+  },
+  "Multitenancy": {
+    "Tenants": [
+      {
+        "Id": "4ead3109-7df4-4bfc-b2b0-90d4c3e51323",
+        "Name": "Tenant1"
+      },
+      {
+        "Id": "eb863af4-d046-dd82-1acc-cd7018e61db0",
+        "Name": "Tenant2"
+      }
+    ]
+  },
+  "AppMetrics": {
+    "PingEndpoint": "/helloping",
+    "DefaultSamplingType": "SlidingWindow",
+    "MetricsEnabled": true,
+    "ReportingEnabled": true,
+    "GlobalTags": { "env": "stage" }
+  }
+}
