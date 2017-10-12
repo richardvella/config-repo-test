@@ -1,5 +1,5 @@
 {
-  "Foo" : "foo",
+  "Foo" : "1234567890",
   "Bar" : "Bar from config server",
   "Logging": {
     "IncludeScopes": false,
