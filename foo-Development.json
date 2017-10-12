@@ -1,5 +1,6 @@
 {
-  "Foo" : "ddasdasdasdasdsdasdsadasdasdasdasdasasdasdasd",
+  "Foo" : "foo",
+  "Bar" : "Bar from config server",
   "Logging": {
     "IncludeScopes": false,
     "LogLevel": {
